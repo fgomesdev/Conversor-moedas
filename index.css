@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #3c96ed;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #3c96ed;
+    cursor: pointer;
+}
+
+input[type="radio"] + label {
+    display: inline;
+    margin-right: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3c96ed;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #3c96ed;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #2b7ac7;
+}
+
+#conversao {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f4fd;
+    border-left: 4px solid #3c96ed;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    min-height: 50px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    #conversao {
+        font-size: 16px;
+    }
+}

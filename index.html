@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>CONVERSOR DE MOEDAS</h1>
+<form onsubmit="return calcular(event)">
+<label>Qual a sua moeda atual?</label> <br><br>
+
+<input type="radio" name="moedaorigem" id="origem_usdt" value="USDT"> USDT
+<input type="radio" name="moedaorigem" id="origem_brl" value="BRL"> BRL
+<input type="radio" name="moedaorigem" id="origem_eur" value="EUR"> EUR
+
+<br><br>
+
+<label>Qual a moeda que deseja?</label> <br><br>
+
+<input type="radio" name="moedadestino" id="destino_usdt" value="USDT"> USDT
+<input type="radio" name="moedadestino" id="destino_brl" value="BRL"> BRL
+<input type="radio" name="moedadestino" id="destino_eur" value="EUR"> EUR
+<br><br>
+
+<label>Quanto voce deseja converter?</label> <br> <br>
+<input type="text" id="dinheiro" placeholder="EX:575"> <br><br> <br>
+
+<input type="submit" value="Converter"> <br><br><br>
+
+<div id="conversao"></div>
+
+
+</form>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
